@@ -15,7 +15,6 @@ def main():
 
     hello_and_goodbye()
 
-
 def hello():
     print('Hello!  How are things?')
 
@@ -29,6 +28,7 @@ def goodbye():
 def hello_and_goodbye():
     hello()
     goodbye()
+
 
 
 main()

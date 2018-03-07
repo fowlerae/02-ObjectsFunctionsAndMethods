@@ -123,6 +123,7 @@ def example2():
 
 
 def example3():
+
     """ Displays a Circle and a Rectangle. """
     # -------------------------------------------------------------------------
     # RoseWindow: optionally takes its width and height.
