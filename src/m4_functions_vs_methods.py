@@ -237,12 +237,16 @@ def try_methods_and_functions():
 
     samwell.speed = 5
     samwell.pen= rg.Pen("red",5)
+    draw_many_squares(samwell, 10, 50, 15)
+    samwell.speed = 100
+    samwell.pen= rg.Pen("red",35)
+    draw_many_squares(samwell,8,300,60)
 
-    for k in range(10):
-        samwell.draw_square(50)
-        samwell.right(15)
+    samwell.pen= rg.Pen("black",3)
+    samwell.backward(200)
+    samwell.draw_circle(30)
+    samwell.draw_square(50)
 
-    
 
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
@@ -277,7 +281,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # Done: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
