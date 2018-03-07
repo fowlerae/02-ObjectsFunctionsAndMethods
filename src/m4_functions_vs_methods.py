@@ -9,8 +9,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ###############################################################################
 #
-# Done
-# : 2.
+# Done: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -246,6 +245,7 @@ def try_methods_and_functions():
     samwell.backward(200)
     samwell.draw_circle(30)
     samwell.draw_square(50)
+    rg.Point(0,0)
 
 
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
