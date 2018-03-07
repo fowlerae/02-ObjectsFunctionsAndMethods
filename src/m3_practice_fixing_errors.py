@@ -7,7 +7,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ###############################################################################
 #
-# Done: 2.
+# Done: 2
 #   Locate the syntax (notation) errors in this file
 #   by looking for red underlines.
 #
