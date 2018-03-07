@@ -4,12 +4,13 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Ashley Fowler.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# Done
+# : 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -86,6 +87,10 @@ def main():
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
+
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
@@ -171,6 +176,15 @@ def turtle3():
 
 
 def try_methods():
+    sirphillip= rg.SimpleTurtle()
+    sirphillip_pen=rg.Pen("brown",5)
+
+    sirphillip.forward(150)
+    sirphillip.left(90)
+    sirphillip.forward(50)
+    sirphillip.backward(100)
+
+
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -181,12 +195,16 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and this function, per its doc-string above.
+    # Done: 3. Implement and this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
 
 
 def try_functions():
+    jump_and_move_turtle(200,300,100,30)
+    jump_and_move_turtle(100,0,200,0)
+    jump_and_move_turtle(-50,100,50,100)
+
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Causes several SimpleTurtles to do the following:
@@ -195,7 +213,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # Done: 4. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #    NOTE: This function requires
@@ -207,6 +225,25 @@ def try_functions():
 
 
 def try_methods_and_functions():
+    samwell = rg.SimpleTurtle()
+    samwell.pen = rg.Pen("blue",5)
+
+    samwell.backward(150)
+    samwell.speed = 1
+
+    samwell.draw_square(100)
+    samwell.right(30)
+    samwell.draw_square(100)
+
+    samwell.speed = 5
+    samwell.pen= rg.Pen("red",5)
+
+    for k in range(10):
+        samwell.draw_square(50)
+        samwell.right(15)
+
+    
+
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
