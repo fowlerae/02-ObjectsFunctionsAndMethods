@@ -961,6 +961,7 @@ class Circle(_ShapeWithCenter, _ShapeWithOutline):
 
     def __init__(self, center, radius):
         """
+          :rtype:
           :type  center:  rg.Point
           :type  radius:  int
         """
