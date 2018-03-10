@@ -14,6 +14,8 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
+    circle_and_rectangle()
+    lines()
 
 def two_circles():
     """
@@ -26,7 +28,7 @@ def two_circles():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    #Done: 2. Implement this function, per its doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
     #    -- File  COLORS.txt  lists all legal color-names.
     # Put a statement in   main   to test this function
@@ -40,10 +42,11 @@ def two_circles():
 
 
     circle2 = rg.Circle(rg.Point(120,100), 75)
+    circle2.fill_color = "lightsteelblue"
 
     circle2.attach_to(window)
     window.render()
-   # circle2.fill_color("lightsteelblue")
+
     window.close_on_mouse_click()
 
 
@@ -79,7 +82,7 @@ def circle_and_rectangle():
            150.0
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # Done: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -87,6 +90,34 @@ def circle_and_rectangle():
     # IMPORTANT: Use the DOT TRICK to guess the names of the relevant
     #       instance variables for outline thickness, etc.
     # -------------------------------------------------------------------------
+
+    window1 = rg.RoseWindow()
+
+    Point1 = rg.Point(300,200)
+    circle = rg.Circle(Point1,25)
+    circle.fill_color = "blue"
+    circle.outline_thickness = 2
+
+    corner1 = rg.Point(100,200)
+    corner2 = rg.Point(200,300)
+    rectangle1 = rg.Rectangle(corner1,corner2)
+    rectangle1.outline_thickness = 2
+
+    print(2)
+    print("blue")
+    print("Point(300,200)")
+    print(300)
+    print(200)
+    print(2)
+    print("None")
+    print("Point(100,200)")
+    print(100)
+    print(200)
+
+    circle.attach_to(window1)
+    rectangle1.attach_to(window1)
+    window1.render()
+    window1.close_on_mouse_click()
 
 
 def lines():
@@ -114,6 +145,25 @@ def lines():
     # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     # -------------------------------------------------------------------------
+
+    window = rg.RoseWindow()
+    Point1 = rg.Point(100,100)
+    Point2 = rg.Point(200,250)
+    line1 = rg.Line(Point1,Point2)
+
+    Point3 = rg.Point(212,300)
+    Point4 = rg.Point(40,170)
+    line2 = rg.Line(Point3, Point4)
+    line2.thickness = 4
+    line2._get_coordinates_for_drawing()
+    line2.get_midpoint
+
+    print()
+
+    line1.attach_to(window)
+    line2.attach_to(window)
+    window.render()
+    window.close_on_mouse_click()
 
 
 # -----------------------------------------------------------------------------
