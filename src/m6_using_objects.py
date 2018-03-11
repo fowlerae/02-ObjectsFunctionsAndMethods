@@ -97,6 +97,7 @@ def circle_and_rectangle():
     circle = rg.Circle(Point1,25)
     circle.fill_color = "blue"
     circle.outline_thickness = 2
+    circle.center
 
     corner1 = rg.Point(100,200)
     corner2 = rg.Point(200,300)
@@ -104,13 +105,13 @@ def circle_and_rectangle():
     rectangle1.outline_thickness = 2
 
     print(2)
-    print("blue")
-    print("Point(300,200)")
+    print(circle.fill_color)
+    print(circle.center)
     print(300)
     print(200)
     print(2)
-    print("None")
-    print("Point(100,200)")
+    print(rectangle1.fill_color)
+    print(rectangle1.get_center())
     print(100)
     print(200)
 
@@ -143,7 +144,7 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # Done: 4. Implement and test this function.
     # -------------------------------------------------------------------------
 
     window = rg.RoseWindow()
@@ -155,10 +156,13 @@ def lines():
     Point4 = rg.Point(40,170)
     line2 = rg.Line(Point3, Point4)
     line2.thickness = 4
-    line2._get_coordinates_for_drawing()
-    line2.get_midpoint
 
-    print()
+    line2.get_midpoint()
+
+    print(line2.get_midpoint())
+    print(126)
+    print(235)
+
 
     line1.attach_to(window)
     line2.attach_to(window)
