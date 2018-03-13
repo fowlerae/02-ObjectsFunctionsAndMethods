@@ -97,7 +97,7 @@ def circle_and_rectangle():
     circle = rg.Circle(Point1,25)
     circle.fill_color = "blue"
     circle.outline_thickness = 2
-    circle.center
+
 
     corner1 = rg.Point(100,200)
     corner2 = rg.Point(200,300)
